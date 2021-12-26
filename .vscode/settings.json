@@ -1,0 +1,4 @@
+{
+  "recommendations": ["johnsoncodehk.volar"],
+  "vetur.validation.script": false
+}
