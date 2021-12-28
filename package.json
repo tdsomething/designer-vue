@@ -1,7 +1,7 @@
 {
   "name": "v3-cmp-template",
   "private": false,
-  "version": "0.0.11",
+  "version": "0.0.0",
   "workspaces": [
     "packages/*",
     "site"
@@ -22,6 +22,7 @@
   ],
   "scripts": {
     "site": "vite --config ./build/site.config.ts",
+    "test": "vitest --config vitest.config.ts",
     "build": "vue-tsc --noEmit && vite build",
     "build:packages": "vue-tsc --noEmit && vite build --config ./build/packages.config.ts",
     "preview": "vite preview",
@@ -41,17 +42,21 @@
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
     "@vitejs/plugin-vue": "^2.0.0",
+    "@vue/test-utils": "^2.0.0-rc.18",
     "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.2.0",
+    "happy-dom": "^2.25.1",
     "prettier": "^2.5.1",
     "prismjs": "^1.25.0",
     "sass": "^1.45.1",
     "typescript": "^4.4.4",
+    "unplugin-auto-import": "^0.5.5",
     "vite": "^2.7.2",
     "vite-plugin-dts": "^0.9.6",
     "vite-plugin-md": "^0.11.6",
+    "vitest": "^0.0.113",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12",
     "vue-tsc": "^0.29.8"
